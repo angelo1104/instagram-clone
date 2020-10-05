@@ -1,0 +1,10 @@
+.navbar{
+    display: flex;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid lightgray;
+}
+
+.app-header-img{
+    object-fit: contain;
+}

@@ -1,0 +1,32 @@
+.post-main-image{
+    display: flex;
+    object-fit: contain;
+    max-width: 600px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.post{
+    margin-top: 30px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.post-user-info{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.post-user-info h3{
+    margin-left: 10px;
+}
+
+.post-about{
+    padding: 20px;
+}
+
+.caption-username{
+    font-weight: bold;
+}
