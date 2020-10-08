@@ -36,7 +36,7 @@
     height: 22px;
 }
 
-.login-modal button{
+.login-modal .signup-button{
     color: white;
     padding: 10px;
     outline-width: 0;
