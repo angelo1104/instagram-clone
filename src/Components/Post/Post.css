@@ -1,16 +1,19 @@
 .post-main-image{
     display: flex;
+    width: 100%;
     object-fit: contain;
-    max-width: 600px;
+    max-height: 500px;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
 }
 
 .post{
-    margin-top: 30px;
     border: 1px solid lightgray;
-    border-radius: 15px;
     background-color: white;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .post-user-info{

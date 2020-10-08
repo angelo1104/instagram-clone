@@ -1,0 +1,49 @@
+.login-modal{
+    background-color: white;
+    outline-width: 0;
+    border: 1px solid lightgray;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.login-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-modal img{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-modal .login-input{
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline-width: 0;
+    border: none;
+    font-size: 14px;
+    border-bottom: 1px solid lightgray;
+    height: 22px;
+}
+
+.login-modal button{
+    color: white;
+    padding: 10px;
+    outline-width: 0;
+    border: 1px solid lightgray;
+    margin-top: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #0095F6;
+    cursor: pointer;
+}
