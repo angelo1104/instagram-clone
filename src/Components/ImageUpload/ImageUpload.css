@@ -1,0 +1,36 @@
+.image-upload{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+}
+
+.image-upload .fixer-div{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+}
+
+.image-upload div *{
+    margin-top: 10px;
+}
+
+.image-upload-button{
+    height: 32px;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.image-upload-content{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.image-upload-content .caption-input{
+    max-height: 20px;
+    outline-width: 0;
+    margin-right: 10px;
+}

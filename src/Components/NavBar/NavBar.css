@@ -3,6 +3,8 @@
     padding: 20px 10px;
     background-color: #ffffff;
     border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 0;
 }
 
 .app-header-img{

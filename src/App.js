@@ -6,6 +6,7 @@ import {Button, Modal} from "@material-ui/core";
 import LoginModal from "./Components/LoginModal/LoginModal";
 import {auth, db} from "./firebase";
 import ImageUpload from "./Components/ImageUpload/ImageUpload";
+import InstagramEmbed from "react-instagram-embed";
 
 function App() {
     const [posts,setPosts] = useState([])
@@ -40,7 +41,8 @@ function App() {
                     return {
                         username : post.data()?.username,
                         imageUrl: post.data()?.imageUrl,
-                        caption : post.data()?.caption
+                        caption : post.data()?.caption,
+                        id: post.id
                     }
                 }))
             })
@@ -75,11 +77,27 @@ function App() {
         <Modal open={open} onClose={handleOpenState}>
            <LoginModal login={login} handleOpenState={handleOpenState}/>
         </Modal>
-      <div className="posts">
-          {
-              posts.map(post => (<Post imageUrl={post.imageUrl} caption={post.caption} username={post.username}/>))
-          }
-      </div>
+
+        <div className="app-posts">
+            <div className="posts">
+                {
+                    posts.map(post => (<Post key={post.id} id={post.id} imageUrl={post.imageUrl} caption={post.caption} username={post.username}/>))
+                }
+            </div>
+
+            <InstagramEmbed
+                url='https://instagram.com/p/B_uf9dmAGPw/'
+                maxWidth={320}
+                hideCaption={false}
+                containerTagName='div'
+                protocol=''
+                injectScript
+                onLoading={() => {}}
+                onSuccess={() => {}}
+                onAfterRender={() => {}}
+                onFailure={() => {}}
+            />
+        </div>
 
     </div>
   );
